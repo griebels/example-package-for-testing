@@ -4,10 +4,10 @@
 requires = ["hatchling"] 
 build-backend = "hatchling.build" 
 
-[project] 
-name = "example-package-for-testing" 
+#[project] 
+
 # version = "0.1.0" # deleting it here, because we are versioning dynamically now...
-dependencies = ["numpy"]
+
 
 # In pyproject.toml
 
@@ -16,6 +16,8 @@ test = ["pytest"]
 
 # pyproject.toml 
 [project] 
+name = "example-package-for-testing" 
+dependencies = ["numpy"]
 dynamic = ["version"] 
 
 [tool.hatch]
